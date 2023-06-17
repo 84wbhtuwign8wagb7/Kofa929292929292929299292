@@ -11,6 +11,81 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="landingpage">
+  
+  
+
+<style>
+#demo {
+  position: fixed;
+  top: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, #006E99, #00D090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#emo{
+  position: fixed;
+  top: 2px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  
+  color: white;
+  font-weight: bold;
+  
+}
+
+</style>
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jun 17, 2023 20:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Countdown expired, have fun Exploiting!";
+  }
+}, 1000);
+</script>
+
+
+  
+  
+  
+  <div class="cd">
+    <p id="emo">V1.1 Release</p>
+    <br>
+    <p id="demo"></p>
+  </div>
+  
+  
   <div class="navbar">
     <a class="navlogo">KRYPTON <img src="https://media.discordapp.net/attachments/1023978768550875217/1086632863476232202/1679143848108.png" style="position: absolute; width: 42px;" alt="LOGO"></a>
     
@@ -28,6 +103,7 @@
       <button class="createbtn">Windows</button>
     </div>
   </div>
+  
   <div class="box">
     
     <div class="infobox">
@@ -44,8 +120,16 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">KRYPTON</e>. Try it now and unlock experience you never had with a Roblox Executor for Windows and Mobile!
       </p>
+      
+      
+      
       <div class="infobox-btnwrapper">
-        <button class="infobox-explorebtn selected"><a href="https://link-center.net/465745/krypton-v1-fixed">Android</a></button>
+        <button class="infobox-explorebtn selected"><a id= href="">Download
+        </a></button>
+        
+        
+        
+        
         <button class="infobox-createbtn" style=""><a href="./soon.html">Windows</a></button>
       </div>
     </div>
